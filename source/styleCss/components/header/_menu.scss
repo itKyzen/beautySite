@@ -1,0 +1,29 @@
+@use "../../presets/" as *;
+
+.menu {
+    background-color: $color-white;
+
+    &__list {
+        display: flex;
+        gap: $gap-primary;
+        justify-content: center;
+
+    }
+
+    &__item {
+        font-size: $font-size;
+        font-weight: 400;
+        padding: 1% 0;
+        margin: 0.2% 0;
+        
+    }
+
+    &__link {
+        color: $color-black;
+
+        &:hover,
+        :focus {
+            color: $color-black;
+        }
+    }
+}

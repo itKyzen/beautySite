@@ -1,0 +1,28 @@
+@use "../../presets/" as *;
+
+.navbar {
+    background-color: $color-light;
+
+    &__list {
+        display: flex;
+        gap: $gap;
+        justify-content: center;
+
+    }
+
+    &__item {
+        font-size: $font-size-sm;
+        font-weight: 400;
+        padding: 1% 0;
+        
+    }
+
+    &__link {
+        color: $color-primary;
+
+        &:hover,
+        :focus {
+            color: $color-primary;
+        }
+    }
+}

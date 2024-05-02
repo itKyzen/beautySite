@@ -1,0 +1,25 @@
+@use "../../presets" as *;
+
+.copyright {
+    align-items: center;
+    background-color: $color-light;
+
+    .conteiner {
+        display: flex;
+        align-items: center ;
+        justify-content: space-between;
+    }
+
+    &__text {
+        font-size: calc($font-size / 1.25);
+        color: $color-dark;
+        font-weight: 400;
+        padding: 2.25% 0;
+    }
+
+    &__title {
+        font-size: calc($font-size / 1.25);
+        color: $color-dark;
+        font-weight: 400;
+    }
+}

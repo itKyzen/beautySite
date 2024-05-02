@@ -1,0 +1,67 @@
+@use "../../presets" as *;
+
+.social {
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2.64%;
+    margin-bottom: 2%;
+
+    &__block {
+        display: flex;
+        gap: calc($gap / 1.33);
+    }
+
+    &__item {
+        padding: 10%;
+        width: 40%;
+        border: 2px solid $color-secondary;
+        border-radius: 50%;
+    }
+    
+    &__link {
+        display: flex;
+        align-items: center;
+        background-size: cover;
+        padding: 12px;
+    }
+
+    &__link--spec {
+        background: url('.../../../images/youtube.png') no-repeat;
+        margin-top: 23%;
+    }
+
+    &__link--mod {
+        background: url('.../../../images/facebook.png') no-repeat;
+        margin-top: 10%;
+    }
+
+    &__link--new {
+        background: url('.../../../images/instagram.png') no-repeat;
+        padding: 11px;
+        margin-top: 10%;
+    }
+
+    .connection {
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+
+        &__number {
+            display: flex;
+            color: $color-black;
+            align-items: center;
+        }
+
+        &__btn {
+            width: 51%;
+            border: 2px solid $color-secondary;
+            color: $color-black;
+            background-color: $color-white;
+            padding: 3%;
+            border-radius: 40px;
+            margin: 3% 0;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@use "../../presets" as *;
+
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    
+    &__item {
+        display: flex;
+        justify-content: center;
+        width: 25%;
+        border: 1px solid $color-light;
+        background-color: $color-white;
+    }
+
+    &__link {
+        display: block;
+        margin: 12.4% 0;
+        padding: 9.1% 27.2%;
+        background: url('.../../../images/impuls.png') no-repeat;
+    }
+
+}
